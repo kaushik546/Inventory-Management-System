@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 100%;
+            margin-left: 0px;
+        }
+        .auto-style2 {
+            height: 113px;
+            width: 3%;
+        }
+        .auto-style5 {
+            height: 113px;
+            width: 43%;
+            font-size: xx-large;
+            color: #006699;
+        }
+        .auto-style28 {
+            height: 113px;
+            width: 6%;
+        }
+        .auto-style30 {
+            height: 113px;
+            width: 3px;
+        }
+        .auto-style31 {
+            height: 321px;
+        }
+        .auto-style33 {
+            height: 44px;
+        }
+        .auto-style34 {
+            text-decoration: none;
+            color: #003366;
+        }
+        .auto-style36 {
+            height: 113px;
+            width: 6px;
+        }
+        .auto-style38 {
+            height: 113px;
+            width: 9px;
+        }
+        .auto-style39 {
+            height: 113px;
+            width: 5px;
+        }
+        .auto-style41 {
+            text-decoration: none;
+        }
+        .auto-style42 {
+            color: #000066;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style28">&nbsp;</td>
+                <td class="auto-style5">
+                    Inventory Management System</td>
+                <td class="auto-style36" style="color: #797979; font-weight: bold;"><a class="auto-style34" href="Home.aspx">Home</a></td>
+                
+                <td class="auto-style38" style="color: #797979; font-weight: bold;"><a class="auto-style41" href="Purchase.aspx"><span class="auto-style42">Purchase</span></a></td>
+                <td class="auto-style39" style="color: #797979; font-weight: bold;"><a class="auto-style41" href="Sales.aspx"><span class="auto-style42">Sales</span></a></td>
+                <td class="auto-style39" style="color: #797979; font-weight: bold;"><a class="auto-style41" href="Product.aspx"><span class="auto-style42">Products</span></a></td>
+                
+                <td class="auto-style39" style="color: #797979; font-weight: bold;"><a class="auto-style41" href="Supplier.aspx"><span class="auto-style42">Suppliers</span></a></td>
+                
+                <td class="auto-style30" style="color: #797979; font-weight: bold;">
+                   <%-- <% if (isLoggedIn) {%>
+                    <label id="lblUsername" runat="server"></label>
+                    <%}%>
+
+                    <% if (!isLoggedIn) {%>
+                    <a id="A1" runat="server" class="auto-style34" href="Login.aspx">Logout</a><%}%></td>--%><td class="auto-style2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style31" colspan="9" style="background-color: #fffff">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style33" colspan="9" style="background-color: #006699; color: #FFFFFF">Copyright<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.2px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">©</span> Kaushik</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
