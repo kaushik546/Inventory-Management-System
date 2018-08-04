@@ -3,6 +3,7 @@
 
 This is the simple Inventory Management System. Here i am trying to cover some basic and important fields of Inventory Management System.
 They are: 
+- [x] Login
 - [x] Products
 - [x] Suppliers
 - [x] Purchases
@@ -16,5 +17,6 @@ They are:
 - Attach InventoryMangement.mdf database to your MSSQL Database or visual studio local database. 
 - If you can not access database file:
   - Edit connectionString from `Web.Debug.config` file and add `AttachDbFilename=|Enter your database directory here|InventoryMangement.mdf;` 
+- Login Username: `kaushik` Password: `123456`
 
 **Thanks.**
