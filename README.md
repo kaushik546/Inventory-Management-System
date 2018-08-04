@@ -1,7 +1,7 @@
 # Inventory-Management-System
 **Inventory Management System by ASP.NET and MSSQL**
 
-This is the simple Inventory Management System. Here i am trying to cover some basic and important fields of Inventory Management System.
+This is a Inventory Management System. Here i am trying to develop some basic and important fields of Inventory Management System.
 They are: 
 - [x] Login
 - [x] Products
