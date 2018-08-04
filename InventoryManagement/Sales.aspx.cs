@@ -18,7 +18,12 @@ public partial class Sales : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
+        if (Session["user"] == null)
+        {
+            Response.Redirect("Login.aspx");
+        }
+
+        else if (!IsPostBack)
         {
             TextBox3.ReadOnly = txtQuantity1.ReadOnly = txtQuantity2.ReadOnly = true;
             btnsell.Enabled = false;

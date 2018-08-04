@@ -13,7 +13,11 @@ public partial class Supplier : System.Web.UI.Page
     
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
+        if (Session["user"] == null)
+        {
+            Response.Redirect("Login.aspx");
+        }
+        else if (!IsPostBack)
         {
             btndelete.Enabled = false;
             FillGridView();

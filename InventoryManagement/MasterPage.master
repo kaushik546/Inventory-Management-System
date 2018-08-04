@@ -39,7 +39,7 @@
         }
         .auto-style34 {
             text-decoration: none;
-            color: #003366;
+            color: #000066;
         }
         .auto-style36 {
             height: 113px;
@@ -78,21 +78,24 @@
                 <td class="auto-style39" style="color: #797979; font-weight: bold;"><a class="auto-style41" href="Supplier.aspx"><span class="auto-style42">Suppliers</span></a></td>
                 
                 <td class="auto-style30" style="color: #797979; font-weight: bold;">
-                   <%-- <% if (isLoggedIn) {%>
-                    <label id="lblUsername" runat="server"></label>
-                    <%}%>
-
-                    <% if (!isLoggedIn) {%>
-                    <a id="A1" runat="server" class="auto-style34" href="Login.aspx">Logout</a><%}%></td>--%><td class="auto-style2">&nbsp;</td>
+              
+                    <asp:Label ID="lblusername" runat="server" Font-Bold="True" ForeColor="#006600"></asp:Label>
+                        
+                    &nbsp;
+                   
+                    <asp:Button ID="btnLogOut" runat="server" href="Login.aspx" Font-Bold="True" ForeColor="#990000" Text="Logout" OnClick="btnLogOut_Click" />
+                       
+                </td>
+                <td class="auto-style2">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style31" colspan="9" style="background-color: #fffff">
+                <td class="auto-style31" colspan="9" style="background-color: #FFFFFF">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style33" colspan="9" style="background-color: #006699; color: #FFFFFF">Copyright<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.2px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">©</span> Kaushik</td>
+                <td class="auto-style33" colspan="9" style="background-color: #006699; color: #FFFFFF">Copyright<span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.2px;  text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">©</span> Kaushik</td>
             </tr>
         </table>
     </div>

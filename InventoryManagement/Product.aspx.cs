@@ -12,7 +12,11 @@ public partial class Product : System.Web.UI.Page
     SqlConnection sqlcon = new SqlConnection(@"Data Source =KAUSHIK\SQLEXPRESS;Initial Catalog=InventoryMangement;Integrated Security=true");
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
+        if (Session["user"] == null)
+        {
+            Response.Redirect("Login.aspx");
+        }
+        else if (!IsPostBack)
         {
             btndelete.Enabled = false;
             FillGridView();

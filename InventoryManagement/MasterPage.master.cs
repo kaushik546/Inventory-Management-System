@@ -12,6 +12,19 @@ public partial class MasterPage : System.Web.UI.MasterPage
     //public string username { get { return lblusername.innertext; } set { lblusername.innertext = value; } }
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["user"] != null)
+        {
+            lblusername.Text = Session["user"].ToString();
+        }
+        else
+        {
+            btnLogOut.Visible = false;
+        }
+    }
 
+    protected void btnLogOut_Click(object sender, EventArgs e)
+    {
+        Session.Abandon();
+        Response.Redirect("Login.aspx");
     }
 }

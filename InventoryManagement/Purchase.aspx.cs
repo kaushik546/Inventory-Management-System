@@ -16,7 +16,11 @@ public partial class Store : System.Web.UI.Page
     DataSet ds;
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
+        if (Session["user"] == null)
+        {
+            Response.Redirect("Login.aspx");
+        }
+        else if (!IsPostBack)
         {
             filldropdownlist();
             FillGridView();
